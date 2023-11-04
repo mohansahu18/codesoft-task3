@@ -1,0 +1,137 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "silkscreen", cursive;
+}
+body {
+  height: 100vh;
+  /* border: 10px solid rgb(0, 157, 255); */
+}
+#container {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+#heading {
+  margin-bottom: 15px;
+  text-align: center;
+  font-size: 2.7rem;
+  color: rgb(255, 0, 0);
+  /* border: 2px solid rgb(21, 215, 21); */
+  text-shadow: 2px 2px rgb(251, 247, 5);
+}
+@media screen and (max-width: 425px) {
+  #heading {
+    margin-bottom: 5px;
+    font-size: 1.7rem;
+  }
+}
+
+#calculator {
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: black;
+  /* border: 2px solid blue; */
+  width: 20vw;
+  height: 80%;
+}
+@media screen and (max-width: 600px) {
+  #calculator {
+    width: 40vw;
+  }
+}
+@media screen and (max-width: 425px) {
+  #calculator {
+    width: 50vw;
+  }
+}
+
+.input {
+  width: 80%;
+  font-size: 5vh;
+  color: white;
+  text-align: right;
+  height: 12vh;
+  padding: 0 2rem;
+  padding-top: 3vh;
+  /* border: 2px solid rgb(226, 255, 8); */
+  overflow: scroll;
+}
+.input::-webkit-scrollbar {
+  display: none;
+}
+.line {
+  padding: 0.5rem;
+  /* height: 10vh; */
+  /* border: 2px solid rgb(0, 255, 153); */
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+.button {
+  cursor: pointer;
+  font-size: 1.5rem;
+  border-radius: 5rem;
+  width: 4vw;
+  height: 9vh;
+  /* border: 2px solid rgb(255, 0, 204); */
+}
+@media screen and (max-width: 600px) {
+  .button {
+    font-size: 1.9rem;
+    border-radius: 6rem;
+    width: 8vw;
+    height: 9vh;
+  }
+}
+@media screen and (max-width: 425px) {
+  .button {
+    font-size: 0.7rem;
+    border-radius: 4rem;
+    width: 10vw;
+    height: 9vh;
+  }
+}
+
+.font-size-1rem {
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+@media screen and (max-width: 600px) {
+  .font-size-1rem {
+    font-size: 1.4rem;
+    font-weight: 600;
+  }
+}
+@media screen and (max-width: 425px) {
+  .font-size-1rem {
+    font-size: 0.9rem;
+  }
+}
+
+.gray-bg {
+  background-color: antiquewhite;
+  color: black;
+}
+.dark-gray-bg {
+  color: white;
+  background-color: #313131;
+}
+.yellow-bg {
+  color: white;
+  background-color: rgb(164, 133, 31);
+  /* position: absolute;
+  left: 75%; */
+  /* border: 2px solid green; */
+}
+.zero {
+  width: 8.5vw;
+}
+@media screen and (max-width: 600px) {
+  .zero {
+    width: 15.5vw;
+  }
+}
